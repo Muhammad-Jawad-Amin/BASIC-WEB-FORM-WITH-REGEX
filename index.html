@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My WebPage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jsscript.js"></script>
+
+</head>
+
+<body>
+
+    <header class="HeadFoot">
+        WELCOME TO MY WEB PAGE
+    </header>
+
+    <section>
+
+        <div class="Boxes">
+
+            <form>
+
+                <label class="Login">LOGIN INFO</label>
+                
+                <label for="First_Name" class="Info">FIRST NAME</label>
+                <input type="text" placeholder="eg. Muhammad Jawad" id="First_Name" class="Data" title="Please enter your first name here." onkeyup="FName_Valid()">
+                
+                <label for="Last_Name" class="Info">LAST NAME</label>
+                <input type="text" placeholder="eg. Amin" id="Last_Name" class="Data" title="Please enter your last name here." onkeyup="LName_Valid()">
+
+                <label for="CNIC" class="Info">CNIC</label>
+                <input type="email" placeholder="eg. 55202-1960607-5" id="CNIC" class="Data" title="Please enter your CNIC here." onkeyup="CNIC_Valid()">
+
+                <label for="Phone_No" class="Info">PHONE NO</label>
+                <input type="tel" placeholder="eg. +923032688998 , 03032688998" id="Phone_No" class="Data" title="Please enter your phone no here." onkeyup="Phno_Valid()">
+
+                <label for="Address" class="Info">ADDRESS</label>
+                <input type="text" placeholder="eg. House No , Street No , Area , City" id="Address" class="Data" title="Please enter your address here.">
+
+                <label for="DOB" class="Info">DATE OF BIRTH</label>
+                <input type="date" placeholder="" id="DOB" class="Data" title="Please enter your date of birth here." onkeyup="DOB_Valid()">
+                
+                <label for="Gender" class="Info" title="Please select your gender.">GENDER</label> 
+                    
+                    <div></div>
+
+                    <input type="radio" class="Radio_Buttons" id="Male" name="Gender" value="Male">
+                    <label for="Male" class="Radio">Male 🚹</label>
+                    
+                    <input type="radio" class="Radio_Buttons" id="Female" name="Gender" value="Female">
+                    <label for="Female" class="Radio">Female 🚺</label>
+
+                    <input type="radio" class="Radio_Buttons" id="Others" name="Gender" value="Others">
+                    <label for="Others" class="Radio">Others</label>
+                   
+                <label for="Email" class="Info">EMAIL</label>
+                <input type="email" placeholder="abcdefg123@gmail.com" id="Email" class="Data" title="Please enter your Email here." onkeyup="Email_Valid()">
+                
+                <label for="Password" class="Info">PASSWORD</label>
+                <input type="password" placeholder="8-to-20 Chracters Long" minlength="8" maxlength="20" id="Password" class="Data" title="Please enter your Password here." onkeyup="Password_Valid()">
+                
+                <label for="Conf_Password" class="Info">CONFIRM PASSWORD</label>
+                <input type="password" placeholder="8-to-20 Chracters Long" minlength="8" maxlength="20" id="Conf_Password" class="Data" title="Please enter your Confirm Password here." onkeyup="ConPassword_Valid()">
+                
+                <button type="reset" id="RESET" class="Buttons" title="It will Reset your data fields." onclick="Reset()">RESET</button>
+                <button type="button" id="SIGNUP" class="Buttons" title="It will Submit your Login Info." onclick="Signup()">SIGNUP</button>
+            
+            </form>
+
+       </div>
+
+       <div class="Boxes">
+
+            <label class="Login">DISPLAY LOGIN INFO</label>
+            
+            <label class="Info">Your First Name:</label>
+            <p id="Disp_FName" class="Display"></p>
+
+            <label class="Info">Your Last Name:</label>
+            <p id="Disp_LName" class="Display"></p>
+
+            <label class="Info">Your CNIC:</label>
+            <p id="Disp_CNIC" class="Display"></p>
+
+            <label class="Info">Your Phone No:</label>
+            <p id="Disp_PhoneNo" class="Display"></p>
+
+            <label class="Info">Your Address:</label>
+            <p id="Disp_Address"></p>
+
+            <label class="Info">Your DOB:</label>
+            <p id="Disp_DOB" class="Display"></p>
+
+            <label class="Info">Your Gender:</label>
+            <p id="Disp_Gender" class="Display"></p>
+
+            <label class="Info">Your Email:</label>
+            <p id="Disp_Email" class="Display"></p>
+
+            <label class="Info">Your Password:</label>
+            <p id="Disp_Password" class="Display"></p>
+
+            <label class="Info">Confirm Password:</label>
+            <p id="Disp_Conf_Password" class="Display"></p>
+
+            <a href="https://www.google.com" target="_Self">
+                <button type="button" id="Exit" title="It will take you to google.com.">BACK TO GOOGLE</button>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="fix"></section>
+
+    <footer class="HeadFoot">
+        THANKYOU VERY MUCH
+    </footer>
+
+</body>
+
+</html>
